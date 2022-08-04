@@ -11,7 +11,11 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Weather" component={WeatherData} />
+        <Stack.Screen
+          name="Weather"
+          component={WeatherData}
+          options={{title: 'Weather Data'}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
